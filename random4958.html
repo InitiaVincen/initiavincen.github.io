@@ -11,7 +11,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 0;
+            padding: 20px 0 0; /* Add padding-top to ensure content isn't cut off */
+            box-sizing: border-box; /* Ensure padding and margin are included in the total width and height */
         }
 
         .container {
@@ -19,8 +20,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            padding: 20px;
+            min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+            box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
         }
 
         h1 {
@@ -45,13 +46,6 @@
             margin-bottom: 10px;
         }
 
-        input[type="text"] {
-            padding: 10px;
-            font-size: 16px;
-            margin-bottom: 20px;
-            width: 200px;
-        }
-
         button {
             padding: 10px 20px;
             font-size: 16px;
@@ -71,11 +65,10 @@
     <div class="container">
         <h1>InitiaVincen: Level 2: Completed!</h1>
         <img src="SF.png" alt="Main Image" class="main-image">
-        <p>Congratulations, you have passed the second test. You have reflected, switched perspectives, thought outside the box, were open to opportunnities, connected with allies and learned the answer was within yourself the whole time.Your character is developing quickly.
-        To proceed in to the level 3 send an email containing a link to your favorite Linistit song and another link to a big influence of your own. Remember to sound like a casual reccomendation and not suspicious at all, they are always watching.
-        After I recieve this email I will unlock the third level you will be notified promptly. Best of Luck!</p>
-        <img src="dave.png" alt="Small Image" class="small-image">
-     
-    </script>
+        <p>Congratulations, you have passed the second test. You have reflected, switched perspectives, thought outside the box, were open to opportunities, connected with allies, and learned the answer was within yourself the whole time. Your character is developing quickly.
+        To proceed to level 3, send an email containing a link to your favorite Linistit song and another link to a big influence of your own. Remember to sound like a casual recommendation and not suspicious at all; they are always watching.
+        After I receive this email, I will unlock the third level, and you will be notified promptly. Best of Luck!</p>
+        <img src="Frodo.png" alt="Small Image" class="small-image">
+    </div>
 </body>
 </html>
