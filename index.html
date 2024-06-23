@@ -70,16 +70,16 @@
 <body>
     <div class="container">
         <h1>InitiaVincen: Level 2</h1>
-        <img src="SF.png" alt="Main Image" class="main-image">
+        <img src="SF2.png" alt="Main Image" class="main-image">
         <p>Dear Vincen, congratulations on reaching level 2. Your character was rewarded with one hint-point (HP). You can use HPs to ask "Yes or No" questions to your SF. To do so you can email them with the subject: HP and the question in the body. HPs are cumulative, use them wisely. Remember, they are watching. Good luck on your next quest. </p>
-        <img src="Challenge1.png" alt="Small Image" class="small-image">
+        <img src="Challenge2.png" alt="Small Image" class="small-image">
         <input type="text" id="inputString" placeholder="Enter the secret word">
         <button onclick="checkString()">Submit</button>
     </div>
     <script>
         function checkString() {
             const input = document.getElementById('inputString').value;
-            if (input.toLowerCase() === 'mustaine') {
+            if (input.toLowerCase() === 'linistit') {
                 window.location.href = 'random4957.html'; // Change this to the URL of the next page
             } else {
                 alert('Incorrect word. Please try again.');
