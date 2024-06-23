@@ -11,7 +11,8 @@
             font-family: Arial, sans-serif;
             text-align: center;
             margin: 0;
-            padding: 0;
+            padding: 20px 0 0; /* Added padding-top */
+            box-sizing: border-box; /* Ensure padding and margin are included in the total width and height */
         }
 
         .container {
@@ -19,8 +20,8 @@
             flex-direction: column;
             align-items: center;
             justify-content: center;
-            height: 100vh;
-            padding: 20px;
+            min-height: 100vh; /* Ensure the container takes up the full height of the viewport */
+            box-sizing: border-box; /* Ensure padding and border are included in the total width and height */
         }
 
         h1 {
