@@ -1,1 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>InitiaVincen: Level 1</title>
+    <style>
+        body {
+            background-color: black;
+            color: white;
+            font-family: Arial, sans-serif;
+            text-align: center;
+            margin: 0;
+            padding: 0;
+        }
 
+        .container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            height: 100vh;
+            padding: 20px;
+        }
+
+        h1 {
+            margin-bottom: 20px;
+        }
+
+        .main-image {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        p {
+            margin: 20px 0;
+            font-size: 18px;
+            max-width: 600px;
+        }
+
+        .small-image {
+            width: 300px;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        input[type="text"] {
+            padding: 10px;
+            font-size: 16px;
+            margin-bottom: 20px;
+            width: 200px;
+        }
+
+        button {
+            padding: 10px 20px;
+            font-size: 16px;
+            cursor: pointer;
+            background-color: #444;
+            color: white;
+            border: none;
+            border-radius: 5px;
+        }
+
+        button:hover {
+            background-color: #666;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <h1>InitiaVincen: Level 1</h1>
+        <img src="SF.png" alt="Main Image" class="main-image">
+        <p>Dear Vincen, you have been selected. Your character has been initialized. It is of uttermost importance that you follow the instructions provided by SF in order to reach Level 10. Solve the puzzles prompted in each level to acquire a secret keyword for the next level. Beware, they are watching.</p>
+        <img src="Challenge1.png" alt="Small Image" class="small-image">
+        <input type="text" id="inputString" placeholder="Enter the secret word">
+        <button onclick="checkString()">Submit</button>
+    </div>
+    <script>
+        function checkString() {
+            const input = document.getElementById('inputString').value;
+            if (input.toLowerCase() === 'mustaine') {
+                window.location.href = 'random4957.html'; // Change this to the URL of the next page
+            } else {
+                alert('Incorrect word. Please try again.');
+            }
+        }
+    </script>
+</body>
+</html>
