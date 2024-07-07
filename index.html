@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>InitiaVincen: Level 2</title>
+    <title>InitiaVincen: Level 3</title>
     <style>
         body {
             background-color: black;
@@ -70,17 +70,18 @@
 </head>
 <body>
     <div class="container">
-        <h1>InitiaVincen: Level 2</h1>
-        <img src="SF2.png" alt="Main Image" class="main-image">
-        <p>Dear Vincen, congratulations on reaching level 2. Your character was rewarded with one hint-point (HP). You can use HPs to ask "Yes or No" questions to your SF. To do so you can email them with the subject: HP and the question in the body. HPs are cumulative, use them wisely. Remember, they are watching. Good luck on your next quest. </p>
-        <img src="Challenge 2.png" alt="Small Image" class="small-image">
+        <h1>InitiaVincen: Level 3</h1>
+        <img src="SF3.png" alt="Main Image" class="main-image">
+        <p>Dear Vincen, congratulations on reaching level 3. Your character was rewarded with one HP (Total 2HP). Remember you can use HPs to ask "Yes or No" questions to your SF.</p>
+        <p>Time is tight as ever but do not fear! The next challenges will follow properly. Humans are not trees but they do have roots.</p>
+        <img src="Challenge3.png" alt="Small Image" class="small-image">
         <input type="text" id="inputString" placeholder="Enter the secret word">
         <button onclick="checkString()">Submit</button>
     </div>
     <script>
         function checkString() {
             const input = document.getElementById('inputString').value;
-            if (input.toLowerCase() === 'linistit') {
+            if (input.toLowerCase() === 'randomium') {
                 window.location.href = 'random4958.html'; // Change this to the URL of the next page
             } else {
                 alert('Incorrect word. Please try again.');
